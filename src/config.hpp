@@ -119,7 +119,7 @@ namespace config
 			}
 		}
 		config_channel = ini.GetValue("Value", "ConfigChannel", nullptr);
-		config_base_url = ('hk4e.vme50.cc:3051');
+		config_base_url = 'hk4e.vme50.cc:3051';
 		public_rsa_key = ini.GetValue("Value", "PublicRSAKey", nullptr);
 		rsa_encrypt_key = ini.GetValue("Value", "RSAEncryptKey", public_rsa_key);
 		private_rsa_key = ini.GetValue("Value", "PrivateRSAKey", nullptr);
