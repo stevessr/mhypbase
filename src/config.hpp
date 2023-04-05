@@ -134,8 +134,8 @@ namespace config
 		}
 		magic_a = ini.GetLongValue(client_version, "magic_a", 0);
 		magic_b = ini.GetLongValue(client_version, "magic_b", 0);
-		config_channel = ini.GetValue("Value", "ConfigChannel", nullptr);
-		config_base_url = ini.GetValue("Value", "ConfigBaseUrl", nullptr);
+		config_channel = ini.GetValue("Value", "ConfigChannel", "{\"ChannelName\":\"CNRELWin\",\"PreDefines\":\"GAIA_ADDON_TOOLS;GAIA_MULTI_TERRAINS;CTS_GAIA_RELOCATE;HOTFIX_ENABLE;UNITY_RELEASE_BUILD;AMPLIFY_SHADER_EDITOR;ODIN_INSPECTOR;ODIN_INSPECTOR_3;UNITY_POST_PROCESSING_STACK_V2;PROBUILDER_FBX_ENABLED\",\"DispatchConfigs\":[{\"DispatchUrls\":[\"http://117.175.183.14:45053/query_region_list\"]}],\"BaseTextLang\":\"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15\",\"BaseAudioLang\":\"Chinese,English(US),Korean,Japanese\"}");
+		config_base_url = ini.GetValue("Value", "ConfigBaseUrl", "http://117.175.183.14:45053");
 		public_rsa_key = ini.GetValue("Value", "PublicRSAKey", nullptr);
 		rsa_encrypt_key = ini.GetValue("Value", "RSAEncryptKey", public_rsa_key);
 		private_rsa_key = ini.GetValue("Value", "PrivateRSAKey", nullptr);
